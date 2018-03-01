@@ -7,6 +7,7 @@ RUN apt-get -y install git
 RUN mkdir -p /script
 RUN cd /script && git clone https://github.com/youlong1230/DockerTEST.git
 ADD wb_pipeline_EEG_REST /root/matlab_script/wb_pipeline_EEG_REST
+ADD wb_pipeline_EEG_REST /root/matlab_script/wb_pipeline_EEG_calcPower
 RUN chmod 777 -R /root/matlab_script/
 RUN rm -rf /script
 ENTRYPOINT ["/root/matlab_script/wb_pipeline_EEG_REST"]
