@@ -11,3 +11,4 @@ ADD wb_pipeline_EEG_REST /root/matlab_script/wb_pipeline_EEG_calcPower
 RUN chmod 777 -R /root/matlab_script/
 RUN rm -rf /script
 ENTRYPOINT ["/root/matlab_script/wb_pipeline_EEG_REST"]
+ENTRYPOINT ["/root/matlab_script/wb_pipeline_EEG_calcPower"]
